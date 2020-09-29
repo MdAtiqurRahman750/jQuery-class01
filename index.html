@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/New folder/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+
+    <title>jQuery</title>
+  </head>
+  <body>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 bg-dark p-2">
+              <h2 class="text-info">
+                Shakib Al Hasan
+              </h2>
+              <p class="text-light">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, provident, culpa. Ullam doloremque iste vel libero, eveniet, ex porro harum.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, provident, culpa. Ullam doloremque iste vel libero, eveniet, ex porro harum.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, provident, culpa. Ullam doloremque iste vel libero, eveniet, ex porro harum.
+              </p>
+              <p  class="text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium facere molestias dolore fugit nostrum explicabo excepturi modi ea nisi rem laudantium nulla, necessitatibus inventore illo voluptatem maiores, ad doloremque?
+              </p>
+
+              <button id="hide" class="btn btn-danger">
+                Click to hide
+              </button>
+              <button id="show" class="btn btn-primary">
+                Click to show
+              </button>
+              <button id="toggle" class="btn btn-warning">
+                Load more
+              </button>
+
+
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12 p-3 mt-3">
+                <h2 class="text-info">
+                  Effects
+                </h2>
+                <div class="thumbnil">
+                  <img src="image/5-min.jpg" alt="">
+                  <img src="image/7-min.jpg" alt="">
+                 
+                </div>
+                <button id="fadeout" class="btn btn-info p-1 mt-2">
+            Fade out
+          </button>
+          <button id="fadein" class="btn btn-success p-1 mt-2">
+            Fade in
+          </button>
+            <button id="fadetoggle" class="btn btn-primary p-1 mt-2">
+            Fade Toggle
+          </button>
+            <button id="fadeto" class="btn btn-secondary p-1 mt-2">
+            Fade To
+          </button>
+              </div>
+            
+              </div>
+            </div>
+             
+          </div>
+         
+        
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 mt-3 p-3 bg-secondary">
+              <h2 class="text-warning">
+                Ricardo KAKA <span class="text-danger">(Slide)</span>
+              </h2>
+              <div id="slide">
+              <div class="thumbnill">
+                <img src="image/ricardo-kaka-brasil.jpg" alt="">
+                <img src="image/62e885847ec911f8d37dfa1324c99da7.jpg" height="300px" alt="">
+
+              </div>
+              </div>
+              <button id="Slide-toggle" class="btn btn-danger">
+                Slide toggle
+              </button>
+                 <button id="Slide-up" class="btn btn-primary">
+                Slide up
+              </button>
+               <button id="Slide-down" class="btn btn-light">
+                Slide down
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>$("#hide").click(function(){
+    $("p").hide()
+  });</script>
+  <script>$("#show").click(function(){
+    $("p").show()
+  });</script>
+  <script>$("#toggle").click(function(){
+    $("p:last").toggle()
+  });</script>
+  <script>
+    $(document).ready(function(){
+      $("#fadeout").click(function(){
+    $("img").fadeOut()
+    $("img:last").fadeOut(3000)
+  })
+});</script>
+<script>
+    $(document).ready(function(){
+      $("#fadein").click(function(){
+    $("img").fadeIn("slow")
+   
+  })
+});</script>
+<script>
+    $(document).ready(function(){
+      $("#fadetoggle").click(function(){
+    $("img").fadeToggle("slow")
+   
+  })
+});</script>
+<script>
+    $(document).ready(function(){
+      $("#fadeto").click(function(){
+    $("img").fadeTo("slow",0.3)
+   
+  })
+});</script>
+<script>
+    $(document).ready(function(){
+      $("#Slide-toggle").click(function(){
+    $("#slide").slideToggle()
+   
+  })
+});</script>
+<script>
+    $(document).ready(function(){
+      $("#Slide-up").click(function(){
+    $("#slide").slideUp()
+   
+  })
+});</script>
+<script>
+    $(document).ready(function(){
+      $("#Slide-down").click(function(){
+    $("#slide").slideDown()
+   
+  })
+});</script>
+ 
+  </body>
+</html>
